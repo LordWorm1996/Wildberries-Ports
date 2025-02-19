@@ -1,0 +1,19 @@
+{
+    "label" : "lock",
+    "action" : "hyprlock"
+}
+{
+    "label" : "logout",
+    "action" : "hyprctl dispatch exit"
+}
+{
+    "label" : "shutdown",
+    "action" : "shutdown -h now"
+}
+{
+    "label" : "reboot",
+    "action" : "reboot"
+}
+
+# Modified to remove keybinds as I did not need them and changed the "actions" to match the software I am running
+# Last modified date 19/2/2025 by Dimitrios Psaroudakis

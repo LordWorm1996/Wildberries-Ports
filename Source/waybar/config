@@ -1,0 +1,89 @@
+{
+    "layer": "top",
+    "position": "top",
+    "reload_style_on_change": true,
+    "modules-left": ["custom/notification", "clock"],
+    "modules-center": ["hyprland/workspaces"],
+    "modules-right": ["pulseaudio", "bluetooth", "network", "battery"],
+
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "format-icons": {
+            "active": "",
+            "default": "",
+            "empty": ""
+        },
+        "persistent-workspaces": {
+            "*": [1, 2, 3, 4, 5]
+        }
+    },
+    "custom/notification": {
+        "tooltip": false,
+        "format": "",
+        "on-click": "swaync-client -t -sw",
+        "escape": true
+    },
+    "clock": {
+        "format": "{:%H:%M}",
+        "interval": 1,
+        "tooltip-format": "<tt>{calendar}</tt>",
+        "calendar": {
+            "format": {
+                "today": "<span color='#fAfBfC'><b>{}</b></span>"
+            }
+        }
+    },
+    "network": {
+        "format-wifi": "",
+        "format-ethernet": "󰈀",
+        "format-disconnected": "",
+        "on-click": "kitty -e nmtui",
+        "tooltip-format-disconnected": "No Internet Connection",
+        "tooltip-format-wifi": "{essid} ({signalStrength}%) ",
+        "tooltip-format-ethernet": "{ifname} 󰈀 "
+    },
+    "bluetooth": {
+        "format-on": "󰂯",
+        "format-off": "󰂲",
+        "format-disabled": "󰂲",
+        "format-connected": "󰂱",
+        "tooltip-format": "{num_connections} Device(s) Connected",
+        "tooltip-format-connected": "{device_alias} Connected",
+        "on-click": "blueman-manager"
+    },
+    "battery": {
+        "interval": 30,
+        "states": {
+            "good": 95,
+            "warning": 30,
+            "critical": 20
+        },
+        "format": "{icon} {capacity}%",
+        "format-plugged": "󰂄 {capacity}%",
+        "format-icons": [
+            "󰁺",
+            "󰁼",
+            "󰁾",
+            "󰂀",
+            "󰂂",
+            "󰁹"
+        ]
+    },
+    "pulseaudio": {
+        "scroll-step": 10,
+        "on-click-right": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+        "on-click": "pactl set-source-mute @DEFAULT_SOURCE@ toggle",
+        "format": "{format_source} {icon} {volume}%",
+        "format-muted": "{format_source} 󰝟 {volume}%",
+        "format-source": "",
+        "format-source-muted":"",
+        "format-icons": {
+            "default": ["󰕿", "󰖀", "󰕾"]
+        }
+    }
+}
+
+# Most of the labels were mostly re-written (bluetooth, battery and pulseaudio) to cover functionality I wanted as well as simplify the functionality they oroginally
+# had as I did not need a resource monitor that it originally had and some other minor details that I forget
+# As always the colors were changed to match the theme
+# Lastly modified by Dimitrios Psaroudakis at 19/2/2025

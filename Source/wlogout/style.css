@@ -1,0 +1,60 @@
+* {
+    background-image: none;
+}
+window {
+    background-color: rgba(25, 0, 46, 0.5);
+}
+button {
+    color: rgb(255, 14, 130);
+    font-size: 16px;
+    background-color: rgb(36, 0, 65);
+    border-style: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 35%;
+    border-radius: 30px;
+    margin: 182px 5px;
+    text-shadow: 0px 0px;
+    box-shadow: 0px 0px;
+}
+
+button:focus,
+button:active,
+button:hover {
+    background-color: rgb(144, 0, 72);
+    outline-style: none;
+}
+
+#logout {
+    background-image: image(
+        url("wlogout/logout.png"),
+        url("/home/Lord_Worm/.config/wlogout/logout.png")
+    );
+}
+
+#lock {
+    background-image: image(
+        url("wlogout/lock.png"),
+        url("/home/Lord_Worm/.config/wlogout/lock.png")
+    );
+}
+
+#shutdown {
+    background-image: image(
+        url("wlogout/power.png"),
+        url("/home/Lord_Worm/.config/wlogout/power.png")
+    );
+}
+
+#reboot {
+    background-image: image(
+        url("wlogout/restart.png"),
+        url("/home/Lord_Worm/.config/wlogout/restart.png")
+    );
+}
+
+/*
+Changed the colors of the original source file
+Lastly modified on 19/2/2025 by Dimitrios Psaroudakis
+For the icons please find some that you like
+*/
