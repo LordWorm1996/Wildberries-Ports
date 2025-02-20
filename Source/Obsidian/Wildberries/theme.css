@@ -1,0 +1,307 @@
+.theme-dark {
+    --accent-h: 219;
+    --accent-s: 56%;
+    --accent-l: 55%;
+
+    --background-primary: rgb(25, 0, 46);
+    --background-primary-alt: rgba(199, 155, 255, 0.2);
+    --background-secondary: rgb(36, 0, 65);
+    --background-secondary-alt: rgb(36, 0, 65);
+    --background-accent: rgb(36, 0, 65);
+    --background-modifier-border: rgb(36, 0, 65);
+    --background-modifier-form-field: rgba(0, 0, 0, 0.3);
+    --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.22);
+    --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+    --background-modifier-success: rgb(0, 255, 183);
+    --background-modifier-error: rgb(215, 0, 64);
+    --background-modifier-error-rgb: rgb(215, 0, 64);
+    --background-modifier-error-hover: rgb(215, 0, 64);
+    --background-modifier-error: rgb(215, 0, 64);
+    --background-modifier-cover: rgba(0, 0, 0, 0.6);
+    --text-accent: rgb(255, 14, 130);
+    --text-accent-hover: rgb(255, 14, 130);
+    --text-normal: rgb(0, 255, 183);
+    --text-muted: rgb(199, 155, 255);
+    --text-faint: rgb(144, 0, 72);
+    --text-error: rgb(215, 0, 64);
+    --text-error-hover: rgb(215, 0, 64);
+    --text-highlight-bg: rgba(199, 155, 255, 0.4);
+    --text-selection: rgba(199, 155, 255, 0.2);
+    --text-on-accent: rgb(199, 155, 255);
+    --interactive-normal: rgb(25, 0, 46);
+    --interactive-hover: rgb(36, 0, 65);
+    --interactive-accent-hover: hsl(
+        var(--accent-h),
+        calc(var(--accent-s) + 5%),
+        calc(var(--accent-l) - 10%)
+    );
+    --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
+    --scrollbar-bg: rgba(144, 0, 72, 0.5);
+    --scrollbar-thumb-bg: rgba(144, 0, 72, 0.5);
+    --panel-border-color: rgb(25, 0, 46);
+    --red: rgb(215, 0, 64);
+    --orange: rgb(255, 69, 0);
+    --green: rgb(0, 255, 183);
+    --aqua: rgb(57, 158, 230);
+    --purple: rgb(199, 155, 255);
+    --blue: rgb(57, 158, 230);
+    --yellow: rgb(255, 215, 0);
+
+    --background-modifier-hover: hsla(
+        var(--accent-h),
+        calc(var(--accent-s) - 35%),
+        var(--accent-l),
+        0.06
+    );
+    --divider-color-hover: rgb(144, 0, 72);
+}
+
+/* Search */
+.search-result .search-result-file-title {
+    cursor: pointer;
+}
+
+.search-result .collapse-icon {
+    cursor: pointer;
+}
+
+.search-result:not(.is-collapsed) .search-result-file-title {
+    color: var(--blue);
+}
+
+/* File tab separators */
+.workspace .mod-root .workspace-tab-header-inner::after {
+    right: unset;
+    left: -0.5px;
+}
+
+.workspace
+    .mod-root
+    .workspace-tab-header:last-child
+    .workspace-tab-header-inner::before {
+    position: absolute;
+    right: -0.5px;
+    width: 1px;
+    background-color: var(--tab-divider-color);
+    content: "";
+    height: 20px;
+}
+
+.workspace
+    .mod-root
+    .workspace-tab-header.is-active
+    .workspace-tab-header-inner::after,
+.workspace
+    .mod-root
+    .workspace-tab-header.is-active
+    .workspace-tab-header-inner::before,
+.workspace
+    .mod-root
+    .workspace-tab-header:first-child
+    .workspace-tab-header-inner::after,
+.workspace
+    .mod-root
+    .workspace-tab-header.is-active
+    + .workspace-tab-header
+    .workspace-tab-header-inner::after {
+    opacity: 0;
+}
+
+/* Editor and output */
+.markdown-rendered blockquote {
+    padding: var(--embed-padding);
+}
+
+.mjx-container {
+    text-align: left !important;
+}
+
+.math-block {
+    font-size: 1.3em;
+}
+
+.markdown-preview-section > div h1,
+.markdown-preview-section > div h2,
+.markdown-preview-section > div h3,
+.markdown-preview-section > div h4,
+.markdown-preview-section > div h5,
+.markdown-preview-section > div h6 {
+    margin-top: 40px;
+}
+
+.mod-header + div h1,
+.mod-header + div h2,
+.mod-header + div h3,
+.mod-header + div h4,
+.mod-header + div h5,
+.mod-header + div h6 {
+    margin-top: 30px;
+}
+
+.cm-sizer > .inline-title {
+    margin-bottom: 20px;
+}
+
+/* Miscellaneous */
+.theme-dark .dropdown:hover {
+    background-color: var(--background-modifier-form-field);
+}
+
+.tooltip {
+    color: var(--text-muted);
+}
+
+.nav-file,
+.nav-folder {
+    padding: 1px 2px;
+}
+
+body:not(.is-grabbing) .nav-file-title.is-being-dragged,
+body:not(.is-grabbing) .nav-folder-title.is-being-dragged,
+.nav-file-title.is-being-dragged,
+.nav-folder-title.is-being-dragged {
+    background-color: var(--background-primary-alt);
+    color: var(--nav-item-color);
+}
+
+.view-header-title {
+    text-decoration: underline;
+    text-decoration-color: var(--text-muted);
+    text-underline-offset: 1.5px;
+}
+
+.status-bar {
+    border-color: var(--panel-border-color);
+    border-width: 1px;
+    padding: 4px 8px;
+}
+
+/* Code syntax highlighting */
+code[class*="language-"],
+pre[class*="language-"] {
+    text-align: left !important;
+    white-space: pre !important;
+    word-spacing: normal !important;
+    word-break: normal !important;
+    word-wrap: normal !important;
+    line-height: 1.5 !important;
+    tab-size: 4 !important;
+    hyphens: none !important;
+}
+
+pre[class*="language-"] {
+    /* Code blocks */
+    padding: 1em !important;
+    margin: 0.5em 0 !important;
+    overflow: auto !important;
+}
+
+:not(pre) > code[class*="language-"] {
+    /* Inline code */
+    padding: 0.1em !important;
+    border-radius: 0.3em !important;
+    white-space: normal !important;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata,
+.HyperMD-codeblock .cm-comment {
+    color: var(--text-muted) !important;
+}
+
+.token.punctuation,
+.HyperMD-codeblock .cm-hmd-codeblock,
+.HyperMD-codeblock .cm-bracket {
+    color: var(--text-muted) !important;
+}
+
+.token.selector,
+.token.tag,
+.HyperMD-codeblock .cm-tag,
+.HyperMD-codeblock .cm-property,
+.HyperMD-codeblock .cm-meta,
+.HyperMD-codeblock .cm-qualifier,
+.HyperMD-codeblock .cm-header,
+.HyperMD-codeblock .cm-quote,
+.HyperMD-codeblock .cm-hr,
+.HyperMD-codeblock .cm-link {
+    color: var(--red) !important;
+}
+
+.token.property,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.attr-name,
+.token.deleted,
+.HyperMD-codeblock .cm-number,
+.HyperMD-codeblock .cm-atom,
+.HyperMD-codeblock .cm-attribute {
+    color: var(--orange) !important;
+}
+
+.token.string,
+.token.char,
+.token.attr-value,
+.token.builtin,
+.token.inserted,
+.HyperMD-codeblock .cm-string,
+.HyperMD-codeblock .cm-builtin {
+    color: var(--green) !important;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.HyperMD-codeblock .cm-string-2,
+.HyperMD-codeblock .cm-operator {
+    color: var(--aqua) !important;
+}
+
+.token.atrule,
+.token.keyword,
+.HyperMD-codeblock .cm-keyword {
+    color: var(--purple) !important;
+}
+
+.token.function,
+.token.macro.property,
+.HyperMD-codeblock .cm-def,
+.HyperMD-codeblock .cm-variable {
+    color: var(--blue) !important;
+}
+
+.token.class-name,
+.HyperMD-codeblock .cm-variable-2,
+.HyperMD-codeblock .cm-variable-3 {
+    color: var(--yellow) !important;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+    color: var(--purple) !important;
+}
+
+.token.important,
+.token.bold {
+    font-weight: bold !important;
+}
+
+.token.italic {
+    font-style: italic !important;
+}
+
+.token.entity {
+    cursor: help !important;
+}
+
+/*
+Modifications done to change the original source's colors to match the theme
+Last modified at 20/2/2025 by Dimitrios Psaroudakis
+*/
