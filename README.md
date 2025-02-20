@@ -7,7 +7,7 @@ Waybar, wofi and hyprlock were originally made by https://github.com/elifouts at
 ![wofi](Pictures/wofi.png)
 ![hyprlock](Pictures/hyprlock.JPEG)
 
-Swaync was made by https://github.com/MrRoy shared at https://github.com/ErikReider/SwayNotificationCenter/discussions/183 but again moified to match the theme colors
+Swaync was made by https://github.com/MrRoy shared at https://github.com/ErikReider/SwayNotificationCenter/discussions/183 and was modified to match the theme colors
 ![swaync](Pictures/swaync1.png)
 ![swaync](Pictures/swaync2.png)
 
