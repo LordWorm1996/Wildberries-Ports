@@ -46,7 +46,7 @@
         "tab_bar.background": "#240041",
         "tab.inactive_background": "#2f0b4b",
         "tab.active_background": "#2f0b4b",
-        "search.match_background": "#ff0e82",
+        "search.match_background": "#ff0e8220",
         "panel.background": "#240041",
         "panel.focused_border": "#ff0e82",
         "panel.indent_guide": "#490087",
