@@ -1,3 +1,4 @@
 # Ignores the entire pictures folder
 Pictures/
+# BetterDiscord is in Gabo's official repo since the BetterDiscord port example I use goes under the MIT license which Gabo's repo has
 BetterDiscord/
