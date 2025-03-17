@@ -24,14 +24,9 @@
         "escape": true
     },
     "clock": {
-        "format": "{:%H:%M}",
+        "format": " {:%H:%M 󰸗 %a %d %b %Y}",
         "interval": 1,
         "tooltip-format": "<tt>{calendar}</tt>",
-        "calendar": {
-            "format": {
-                "today": "<span color='#fAfBfC'><b>{}</b></span>"
-            }
-        }
     },
     "network": {
         "format-wifi": "",
