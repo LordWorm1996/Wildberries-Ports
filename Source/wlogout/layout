@@ -4,7 +4,7 @@
 }
 {
     "label" : "logout",
-    "action" : "hyprctl dispatch exit"
+    "action" : "loginctl terminate-user $USER"
 }
 {
     "label" : "shutdown",
@@ -16,4 +16,4 @@
 }
 
 # Modified to remove keybinds as I did not need them and changed the "actions" to match the software I am running
-# Last modified date 19/2/2025 by Dimitrios Psaroudakis
+# Last modified date 17/3/2025 by Dimitrios Psaroudakis
