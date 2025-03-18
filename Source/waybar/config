@@ -29,13 +29,15 @@
         "tooltip-format": "<tt>{calendar}</tt>",
     },
     "network": {
-        "format-wifi": "",
+        "interval": 30,
+        "format-wifi": "{icon}",
         "format-ethernet": "󰈀",
         "format-disconnected": "",
         "on-click": "kitty -e nmtui",
         "tooltip-format-disconnected": "No Internet Connection",
-        "tooltip-format-wifi": "{essid} ({signalStrength}%) ",
-        "tooltip-format-ethernet": "{ifname} 󰈀"
+        "tooltip-format-wifi": "{icon} {essid}",
+        "tooltip-format-ethernet": "{ifname}",
+        "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"]
     },
     "bluetooth": {
         "format-on": "󰂯",
@@ -55,14 +57,7 @@
         },
         "format": "{icon} {capacity}%",
         "format-charging": "󰂄 {capacity}%",
-        "format-icons": [
-            "󰁺",
-            "󰁼",
-            "󰁾",
-            "󰂀",
-            "󰂂",
-            "󰁹"
-        ]
+        "format-icons": ["󰁺", "󰁼", "󰁾", "󰂀", "󰂂", "󰁹"]
     },
     "pulseaudio": {
         "scroll-step": 10,
