@@ -60,21 +60,18 @@ tooltip label {
 }
 #workspaces button:hover,
 #workspaces button.empty:hover {
-    color: rgba(144, 0, 72, 0.5);
+    color: rgb(144, 0, 72);
     border: none;
-    text-shadow: 0px 0px 1.5px rgba(0, 0, 0, 0.5);
     transition: all 0.3s ease;
 }
 #workspaces button.active,
 #workspaces button.empty.active {
     color: rgb(255, 14, 130);
     border: none;
-    text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
 }
 #workspaces button.empty {
     color: rgb(25, 0, 46);
     border: none;
-    text-shadow: 0px 0px 1.5px rgba(0, 0, 0, 0.2);
 }
 #battery:hover {
     transition: all 0.3s ease;
