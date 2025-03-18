@@ -28,9 +28,8 @@ window#waybar {
 }
 tooltip {
     background: rgba(25, 0, 46, 0.5);
-    color: rgb(36, 0, 65);
 }
-tooltip * {
+tooltip label {
     color: rgb(255, 14, 130);
 }
 #clock:hover,
