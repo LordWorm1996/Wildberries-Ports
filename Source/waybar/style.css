@@ -30,29 +30,30 @@ tooltip {
     background: rgba(25, 0, 46, 0.5);
     color: rgb(36, 0, 65);
 }
+tooltip * {
+    color: rgb(255, 14, 130);
+}
 #clock:hover,
 #custom-notification:hover,
 #network:hover,
 #battery:hover,
 #pulseaudio:hover,
-#bluetooth:hover {
+#bluetooth:hover,
+#custom-powerprofile:hover {
     transition: all 0.3s ease;
     color: rgb(144, 0, 72);
 }
-#custom-notification {
+#custom-notification,
+#custom-powerprofile,
+#clock,
+#workspace,
+#network,
+#bluetooth,
+#pulseaudio,
+#battery {
     padding: 0px 5px;
     transition: all 0.3s ease;
     color: rgb(255, 14, 130);
-}
-#clock {
-    padding: 0px 5px;
-    color: rgb(255, 14, 130);
-    transition: all 0.3s ease;
-}
-#workspaces {
-    padding: 0px 5px;
-    color: rgb(255, 14, 130);
-    transition: all 0.3s ease;
 }
 #workspaces button {
     all: unset;
@@ -78,33 +79,26 @@ tooltip {
     border: none;
     text-shadow: 0px 0px 1.5px rgba(0, 0, 0, 0.2);
 }
-#network,
-#bluetooth,
-#pulseaudio,
-#battery {
-    padding: 0px 5px;
+#battery:hover {
     transition: all 0.3s ease;
-    color: rgb(255, 14, 130);
+    opacity: 0.5;
 }
 #battery.charging {
     color: rgb(0, 255, 183);
 }
-
+#battery.good:not(.charging) {
+    color: rgb(255, 215, 0);
+}
 #battery.warning:not(.charging) {
     color: rgb(255, 69, 0);
 }
-
+#network.disconnected,
 #battery.critical:not(.charging) {
     color: rgb(215, 0, 64);
-    animation-name: blink;
-    animation-duration: 0.5s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
 }
 
 /*
 Changed the colors of the original source file
 Simplified many IDs into one bracket since there was no need to repeat the same code lines
-Lastly modified on 21/2/2025 by Dimitrios Psaroudakis
+Lastly modified on 18/3/2025 by Dimitrios Psaroudakis
 */
