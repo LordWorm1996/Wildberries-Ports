@@ -29,7 +29,7 @@
         "tooltip-format": "<tt>{calendar}</tt>",
     },
     "network": {
-        "interval": 30,
+        "interval": 1,
         "format-wifi": "{icon}",
         "format-ethernet": "󰈀",
         "format-disconnected": "",
@@ -49,7 +49,7 @@
         "on-click": "blueman-manager"
     },
     "battery": {
-        "interval": 30,
+        "interval": 1,
         "states": {
             "good": 100,
             "warning": 50,
@@ -57,6 +57,7 @@
         },
         "format": "{icon} {capacity}%",
         "format-charging": "{icon} {capacity}%",
+        "format-plugged": "{icon} {capacity}%",
         "format-icons": ["󰁺", "󰁼", "󰁾", "󰂀", "󰂂", "󰁹"]
     },
     "pulseaudio": {
