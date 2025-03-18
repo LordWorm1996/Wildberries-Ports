@@ -46,7 +46,8 @@ tooltip label {
 #network,
 #bluetooth,
 #pulseaudio,
-#battery {
+#battery,
+#battery.plugged {
     padding: 0px 5px;
     color: rgb(255, 14, 130);
 }
