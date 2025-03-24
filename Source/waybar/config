@@ -68,9 +68,7 @@
         "format-muted": "{format_source} 󰝟 {volume}%",
         "format-source": "",
         "format-source-muted":"",
-        "format-icons": {
-            "default": ["󰕿", "󰖀", "󰕾"]
-        }
+        "format-icons": ["󰕿", "󰖀", "󰕾"]
     },
     "custom/powerprofile": {
         "format": "󰓅",
