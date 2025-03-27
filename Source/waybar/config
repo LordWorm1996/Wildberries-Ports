@@ -4,7 +4,7 @@
     "reload_style_on_change": true,
     "modules-left": ["custom/notification", "clock"],
     "modules-center": ["hyprland/workspaces"],
-    "modules-right": ["pulseaudio", "bluetooth", "network", "custom/powerprofile", "battery"],
+    "modules-right": ["pulseaudio#microphone", "pulseaudio#speaker", "bluetooth", "network", "custom/powerprofile", "battery"],
 
     "hyprland/workspaces": {
         "format": "{icon}",
@@ -60,15 +60,18 @@
         "format-plugged": "{icon} {capacity}%",
         "format-icons": ["󰁺", "󰁼", "󰁾", "󰂀", "󰂂", "󰁹"]
     },
-    "pulseaudio": {
+    "pulseaudio#speaker": {
         "scroll-step": 10,
-        "on-click-right": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+        "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+        "format": "{icon} {volume}%",
+        "format-muted": "󰝟 {volume}%",
+        "format-icons": ["󰕿", "󰖀", "󰕾"]
+    },
+    "pulseaudio#microphone": {
         "on-click": "pactl set-source-mute @DEFAULT_SOURCE@ toggle",
-        "format": "{format_source} {icon} {volume}%",
-        "format-muted": "{format_source} 󰝟 {volume}%",
+        "format": "{format_source}",
         "format-source": "",
         "format-source-muted":"",
-        "format-icons": ["󰕿", "󰖀", "󰕾"]
     },
     "custom/powerprofile": {
         "format": "󰓅",
@@ -83,4 +86,4 @@
 # Most of the labels were mostly re-written (bluetooth, battery and pulseaudio) to cover functionality I wanted as well as simplify the functionality they oroginally
 # had as I did not need a resource monitor that it originally had and some other minor details that I forget
 # As always the colors were changed to match the theme
-# Lastly modified by Dimitrios Psaroudakis at 24/3/2025
+# Lastly modified by Dimitrios Psaroudakis at 27/3/2025
