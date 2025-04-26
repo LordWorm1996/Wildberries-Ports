@@ -14,7 +14,4 @@ Swaync was made by https://github.com/MrRoy shared at https://github.com/ErikRei
 Wlogout was made by https://github.com/gfhdhytghd at https://github.com/gfhdhytghd/wlogout-theme and again was modified by me to match the functionality and the colors I wanted
 ![wlogout](Pictures/wlogout.png)
 
-Obsidian was made by someone else's base source that I cannot find if you see that this is your modifed code please contact me and I'll give you proper credit
-![obsidian](Pictures/obsidian.png)
-
 Please find the attached pictures to see how they look like and read all the readme.txt files for more info
