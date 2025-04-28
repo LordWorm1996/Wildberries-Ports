@@ -1,6 +1,6 @@
 * {
     font-size: 15px;
-    font-family: "CodeNewRoman Nerd Font Propo";
+    font-family: "JetBrainsMono Nerd Font Propo";
 }
 window#waybar {
     all: unset;
@@ -35,7 +35,8 @@ tooltip label {
 #pulseaudio:hover,
 #bluetooth:hover,
 #battery:hover,
-#custom-powerprofile:hover {
+#custom-powerprofile:hover,
+#language:hover {
     transition: all 0.3s ease;
     opacity: 0.5;
 }
@@ -46,8 +47,9 @@ tooltip label {
 #network,
 #bluetooth,
 #pulseaudio,
+#battery.plugged,
 #battery,
-#battery.plugged {
+#language {
     padding: 0px 5px;
     color: rgb(255, 14, 130);
 }
@@ -71,10 +73,14 @@ tooltip label {
     color: rgb(25, 0, 46);
     border: none;
 }
-#battery.charging {
+#battery.charging,
+#battery.plugged {
     color: rgb(0, 255, 183);
 }
 #battery.good:not(.charging) {
+    color: rgb(0, 255, 183);
+}
+#battery.ok:not(.charging) {
     color: rgb(255, 215, 0);
 }
 #battery.warning:not(.charging) {
@@ -85,8 +91,9 @@ tooltip label {
     color: rgb(215, 0, 64);
 }
 
+
 /*
 Changed the colors of the original source file
 Simplified many IDs into one bracket since there was no need to repeat the same code lines
-Lastly modified on 18/3/2025 by Dimitrios Psaroudakis
+Lastly modified on 28/4/2025 by Dimitrios Psaroudakis
 */
