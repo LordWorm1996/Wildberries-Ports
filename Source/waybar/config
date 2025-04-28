@@ -2,7 +2,7 @@
     "layer": "top",
     "position": "top",
     "reload_style_on_change": true,
-    "modules-left": ["custom/notification", "clock"],
+    "modules-left": ["custom/notification", "clock#clock", "clock#date", "hyprland/language"],
     "modules-center": ["hyprland/workspaces"],
     "modules-right": ["pulseaudio#microphone", "pulseaudio#speaker", "bluetooth", "network", "custom/powerprofile", "battery"],
 
@@ -23,8 +23,13 @@
         "on-click": "swaync-client -t -sw",
         "escape": true
     },
-    "clock": {
-        "format": " {:%H:%M 󰸗 %a %d %b %Y}",
+    "clock#clock": {
+        "format": " {:%H:%M}",
+        "interval": 1,
+        "tooltip-format": "{:%H:%M:%S}",
+    },
+    "clock#date": {
+        "format": "󰸗 {:%a %d %b %Y}",
         "interval": 1,
         "tooltip-format": "<tt>{calendar}</tt>",
     },
@@ -33,9 +38,9 @@
         "format-wifi": "{icon}",
         "format-ethernet": "󰈀",
         "format-disconnected": "",
-        "on-click": "kitty -e nmtui",
+        "on-click": "wezterm -e nmtui",
         "tooltip-format-disconnected": "No Internet Connection",
-        "tooltip-format-wifi": "{icon} {essid}",
+        "tooltip-format-wifi": "{essid}",
         "tooltip-format-ethernet": "{ifname}",
         "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"]
     },
@@ -46,12 +51,13 @@
         "format-connected": "󰂱",
         "tooltip-format": "{num_connections} Device(s) Connected",
         "tooltip-format-connected": "{device_alias} Connected",
-        "on-click": "blueman-manager"
+        "on-click": "wezterm -e bluetui"
     },
     "battery": {
         "interval": 1,
         "states": {
             "good": 100,
+            "ok": 70,
             "warning": 50,
             "critical": 20
         },
@@ -63,12 +69,14 @@
     "pulseaudio#speaker": {
         "scroll-step": 10,
         "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+        "on-click-right": "pavucontrol",
         "format": "{icon} {volume}%",
         "format-muted": "󰝟 {volume}%",
         "format-icons": ["󰕿", "󰖀", "󰕾"]
     },
     "pulseaudio#microphone": {
         "on-click": "pactl set-source-mute @DEFAULT_SOURCE@ toggle",
+        "on-click-right": "pavucontrol",
         "format": "{format_source}",
         "format-source": "",
         "format-source-muted":"",
@@ -81,9 +89,16 @@
         "on-click-right": "powerprofilesctl set power-saver",
         "tooltip-format": "{text}"
     },
+    "hyprland/language": {
+        "format": "󰌌 {}",
+        "format-gr": "GR",
+        "format-en": "EN",
+        "tooltip": false
+    },
 }
+
 
 # Most of the labels were mostly re-written (bluetooth, battery and pulseaudio) to cover functionality I wanted as well as simplify the functionality they oroginally
 # had as I did not need a resource monitor that it originally had and some other minor details that I forget
 # As always the colors were changed to match the theme
-# Lastly modified by Dimitrios Psaroudakis at 27/3/2025
+# Lastly modified by Dimitrios Psaroudakis at 28/4/2025
