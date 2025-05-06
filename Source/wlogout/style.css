@@ -1,9 +1,11 @@
 * {
     background-image: none;
 }
+
 window {
     background-color: rgba(25, 0, 46, 0.5);
 }
+
 button {
     color: rgb(255, 14, 130);
     font-size: 16px;
@@ -25,36 +27,26 @@ button:hover {
     outline-style: none;
 }
 
-#logout {
-    background-image: image(
-        url("wlogout/logout.png"),
-        url("/home/Lord_Worm/.config/wlogout/logout.png")
-    );
+#lock {
+    background-image: image(url("/home/Lord_Worm/.config/wlogout/lock.png"));
 }
 
-#lock {
-    background-image: image(
-        url("wlogout/lock.png"),
-        url("/home/Lord_Worm/.config/wlogout/lock.png")
-    );
+#suspend {
+    background-image: image(url("/home/Lord_Worm/.config/wlogout/suspend.png"));
 }
 
 #shutdown {
     background-image: image(
-        url("wlogout/power.png"),
-        url("/home/Lord_Worm/.config/wlogout/power.png")
+        url("/home/Lord_Worm/.config/wlogout/shutdown.png")
     );
 }
 
 #reboot {
-    background-image: image(
-        url("wlogout/restart.png"),
-        url("/home/Lord_Worm/.config/wlogout/restart.png")
-    );
+    background-image: image(url("/home/Lord_Worm/.config/wlogout/reboot.png"));
 }
 
 /*
 Changed the colors of the original source file
-Lastly modified on 19/2/2025 by Dimitrios Psaroudakis
+Lastly modified on 6/5/2025 by Dimitrios Psaroudakis
 For the icons please find some that you like
 */
