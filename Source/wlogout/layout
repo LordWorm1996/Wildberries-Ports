@@ -2,18 +2,21 @@
     "label" : "lock",
     "action" : "hyprlock"
 }
+
 {
-    "label" : "logout",
-    "action" : "systemctl restart lemurs"
+    "label" : "suspend",
+    "action" : "systemctl suspend"
 }
+
 {
     "label" : "shutdown",
     "action" : "shutdown -h now"
 }
+
 {
     "label" : "reboot",
     "action" : "reboot"
 }
 
 # Modified to remove keybinds as I did not need them and changed the "actions" to match the software I am running
-# Last modified date 17/3/2025 by Dimitrios Psaroudakis
+# Last modified date 6/5/2025 by Dimitrios Psaroudakis
