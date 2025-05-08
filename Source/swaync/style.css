@@ -10,6 +10,12 @@
 @define-color aux-red rgb(215, 0, 64);
 @define-color aux-orange rgb(255, 69, 0);
 
+* {
+    color: @foreground;
+    font-size: 15px;
+    font-family: "JetBrainsMono Nerd Font Propo";
+}
+
 .notification-row {
     transition: all 200ms ease;
     outline: none;
@@ -300,5 +306,5 @@
 
 /*
 Changed the colors of the original source file
-Lastly modified on 19/2/2025 by Dimitrios Psaroudakis
+Lastly modified on 8/5/2025 by Dimitrios Psaroudakis
 */
