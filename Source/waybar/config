@@ -26,12 +26,12 @@
     "clock#clock": {
         "format": " {:%H:%M}",
         "interval": 1,
-        "tooltip-format": "{:%H:%M:%S}",
+        "tooltip-format": "{:%H:%M:%S}"
     },
     "clock#date": {
-        "format": "󰸗 {:%a %d %b %Y}",
+        "format": "󰸗 {:%d/%m/%Y}",
         "interval": 1,
-        "tooltip-format": "<tt>{calendar}</tt>",
+        "tooltip-format": "<tt>{calendar}</tt>"
     },
     "network": {
         "interval": 1,
