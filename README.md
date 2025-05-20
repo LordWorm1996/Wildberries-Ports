@@ -7,5 +7,3 @@ Waybar, wofi and hyprlock were originally made by https://github.com/elifouts at
 Swaync was made by https://github.com/MrRoy shared at https://github.com/ErikReider/SwayNotificationCenter/discussions/183 and was modified to match the theme colors
 
 Wlogout was made by https://github.com/gfhdhytghd at https://github.com/gfhdhytghd/wlogout-theme and again was modified by me to match the functionality and the colors I wanted
-
-Please read all the readme.txt files for more info
