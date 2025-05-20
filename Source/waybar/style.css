@@ -49,7 +49,6 @@ tooltip label {
 #network,
 #bluetooth,
 #pulseaudio,
-#battery.plugged,
 #battery,
 #language,
 #custom-jellyfin,
@@ -77,23 +76,23 @@ tooltip label {
     color: rgb(25, 0, 46);
     border: none;
 }
-#battery.charging,
-#battery.plugged,
+#battery.charging.good,
+#battery.plugged.good,
 #battery.good:not(.charging) {
     color: rgb(0, 255, 183);
 }
-#battery.charging,
-#battery.plugged,
+#battery.charging.ok,
+#battery.plugged.ok,
 #battery.ok:not(.charging) {
     color: rgb(255, 215, 0);
 }
-#battery.charging,
-#battery.plugged,
+#battery.charging.warning,
+#battery.plugged.warning,
 #battery.warning:not(.charging) {
     color: rgb(255, 69, 0);
 }
-#battery.charging,
-#battery.plugged,
+#battery.charging.critical,
+#battery.plugged.critical,
 #network.disconnected,
 #battery.critical:not(.charging) {
     color: rgb(215, 0, 64);
@@ -104,5 +103,5 @@ tooltip label {
 /*
 Changed the colors of the original source file
 Simplified many IDs into one bracket since there was no need to repeat the same code lines
-Lastly modified on 19/5/2025 by Dimitrios Psaroudakis
+Lastly modified on 20/5/2025 by Dimitrios Psaroudakis
 */
