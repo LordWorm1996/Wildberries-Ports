@@ -8,4 +8,4 @@ Swaync was made by https://github.com/MrRoy shared at https://github.com/ErikRei
 
 Wlogout was made by https://github.com/gfhdhytghd at https://github.com/gfhdhytghd/wlogout-theme and again was modified by me to match the functionality and the colors I wanted
 
-Please find the attached pictures to see how they look like and read all the readme.txt files for more info
+Please read all the readme.txt files for more info
